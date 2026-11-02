@@ -10,11 +10,15 @@ ostream& operator<<(ostream& os, const vector<T>& v) {
 
 vector<long long> dedupeSorted(vector<long long> a) {
     vector<long long> res;
-    for(long long i = 0; i < a.size(); i++){
-        if(res.empty() || res.back() != a[i]){
+    if(a.size() != 0){
+        res.push_back(a[0]);
+    }else{
+        return {};
+    }
+    
+    for(long long i = 1; i < a.size(); i++){
+        if(res.back() != a[i]){
             res.push_back(a[i]);
-        }else{
-            continue;
         }
     }
     return res;
