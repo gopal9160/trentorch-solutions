@@ -1,0 +1,44 @@
+# Find the Missing Number
+
+Beginner | dsa-sheet | arrays | array-basics
+
+`nums` holds `n` **different** numbers taken from `0, 1, ..., n`. Exactly one number from that range is missing. Return it.
+
+### Examples
+
+**Example 1**
+
+Input:
+
+```python
+missing_number([3, 0, 1])
+```
+
+Output:
+
+```text
+2
+```
+
+The numbers are from 0 to 3 and `2` is missing.
+
+**Example 2**
+
+Input:
+
+```python
+missing_number([0])
+```
+
+Output:
+
+```text
+1
+```
+
+The numbers are from 0 to 1 and `1` is missing.
+
+### Constraints
+
+- `1 <= len(nums) <= 3 * 10**5`
+- All values are different and lie between `0` and `len(nums)`.
